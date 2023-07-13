@@ -330,6 +330,8 @@ class LWC(SeriesCommon):
 
         from lightweight_charts.polygon import PolygonAPI
         self.polygon: PolygonAPI = PolygonAPI(self)
+        from lightweight_charts.binance import BinanceAPI
+        self.binance: BinanceAPI = BinanceAPI(self)
 
     def _on_js_load(self):
         if self.loaded:
